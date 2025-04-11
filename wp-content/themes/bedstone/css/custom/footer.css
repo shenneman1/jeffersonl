@@ -1,0 +1,131 @@
+/* =================================================================================
+  Site Footer
+================================================================================= */
+
+.banner-booking {
+    margin-top: 3em;
+}
+
+.page-id-24 .site-footer {
+    margin-top: 3em;
+}
+
+.sticky-site-footer {
+    /*min-height: 100vh;*/
+    /*padding-bottom: 150px;*/ /* match .site-footer height */
+}
+
+.sticky-site-footer .site-footer {
+    /*position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;*/ /* match .sticky-site-footer margin-bottom */
+}
+
+.site-footer {
+    background-color: #021943;
+    background-image: url('images/JL_Mark-Only.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 158px;
+    background-size: 260px;
+}
+
+
+/* ==================================================
+  Footer Main
+================================================== */
+
+.footer-main {
+    padding: 2em 0;
+    color: rgba(255,255,255,1);
+}
+
+.footer-main__col-heading {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #008BD6;
+    font-size: 0.875em;
+    font-weight: 700;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+}
+
+.footer-main__col-heading a {
+    transition: color 0.25s;
+}
+
+.footer-main__col-heading a:hover,
+.footer-main__col-heading a:focus {
+    color: rgba(0,122,188,0.7);
+}
+
+.nav-footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-footer__list li {
+    margin-bottom: 0.6em;
+    font-size: 0.875em;
+}
+
+.nav-footer__list li a {
+    transition: color 0.25s;
+}
+
+.nav-footer__list li a:hover,
+.nav-footer__list li a:focus {
+    color: #CCCCCC;
+}
+
+.phone--footer {
+    position: relative;
+    top: -0.4em;
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+.social--footer {
+    margin-top: 1em;
+}
+
+
+
+/* ==================================================
+  Subfooter
+================================================== */
+.subfooter {
+    padding: 1.5em 0;
+}
+
+.subfooter .container {
+    text-align: center;
+}
+
+.subfooter__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subfooter__list li {
+    display: inline-block;
+    color: #008BD6;
+    font-size: 0.875em;
+}
+
+.subfooter__list li:nth-child(n+2) {
+    margin-left: 0.2em;
+}
+
+.subfooter__list li:nth-child(n+2)::before {
+    content: "|";
+    display: inline-block;
+    margin-right: 0.4em;
+}
+
+.subfooter__list a:hover,
+.subfooter__list:focus {
+    text-decoration: underline;
+}

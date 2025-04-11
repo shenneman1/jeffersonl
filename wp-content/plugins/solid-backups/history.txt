@@ -1,0 +1,6 @@
+10.0.0 - 2024-10-09 - Timothy Jacobs, Lisa Canini, John Regan
+	New: Initial release of Solid Backups – NextGen.
+10.0.1 - 2024-12-14 - Timothy Jacobs
+	Bug Fix: Onboarding page would crash on WordPress 6.5.
+	Bug Fix: Styling issues.
+	Bug Fix: Missing changelog.

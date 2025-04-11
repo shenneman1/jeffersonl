@@ -1,0 +1,107 @@
+<!doctype html>
+<html <?php language_attributes(); ?> class="no-js">
+	<head>
+		<meta charset="<?php bloginfo('charset'); ?>">
+		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+
+		<link href="//www.google-analytics.com" rel="dns-prefetch">
+        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
+        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="<?php bloginfo('description'); ?>">
+
+		<?php
+		    require_once 'Detection/Mobile_Detect.php';
+		    $detect = new Mobile_Detect;
+
+		    if($detect->isMobile()){
+		        ?>
+		        <script type="text/javascript">
+		            function getCookie(name)
+		            {
+		                var re = new RegExp(name + "=([^;]+)");
+		                var value = re.exec(document.cookie);
+		                return (value != null) ? unescape(value[1]) : null;
+		            }
+		            
+		            if(getCookie("hasLanded")< 1 || true){
+		            	var dt = new Date();
+   						dt.setDate(dt.getDate() + 5);
+   
+		            	document.cookie="hasLanded=true; expires=" + dt + "; path=/";
+		                document.location = "https://mobile.jeffersonlines.com/";
+		            }
+		        </script>
+		        <?php
+		    }
+		?>
+		<!-- - - - - - - - - - - - - - - - - - - -
+			Internet Explorer Conditional Comments
+		 - - - - - - - - - - - - - - - - - - -  -->
+		<!--[if IE 6]>
+			<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/ie_6.css">
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/ie_7.css">
+		<![endif]-->
+
+		<!-- Scripts -->
+
+		<?php wp_head(); ?>
+
+		<!--<script>
+        // conditionizr.com
+        // configure environment tests
+        conditionizr.config({
+            assets: '<?php echo get_template_directory_uri(); ?>',
+            tests: {}
+        });
+			</script>-->
+
+		<script src="<?php echo get_template_directory_uri(); ?>/js/iframe-resizer-master/js/iframeResizer.min.js" type="text/javascript"></script>
+
+	</head>
+	<body <?php body_class(); ?>>
+
+		<!-- Google website satisfaction survey -->
+		<script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=cxlgx7gtxrjmjepojox56zqbiq"></script>
+		<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M7CSTR"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-M7CSTR');</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- main -->
+		<div class="main homepage <?php echo get_post_meta($post->ID, 'bg-class', true); ?>">
+			<!-- content wrapper -->
+			<div class="content" style="position: relative; top: 0; left: 0;">
+
+			<!-- header -->
+			<div class="header" role="banner">
+
+					<!-- logo -->
+					<div class="logo">
+						<a href="<?php echo home_url(); ?>">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" width="354" height="47" alt="Jefferson Lines">
+						</a>
+						<div class="clear"></div>
+					</div>
+					<!-- /logo -->
+
+
+
+			</div>
+			<!-- /header -->
+
+			<!-- nav -->
+			<nav class="topnav" role="navigation">
+				<?php html5blank_nav(); ?>
+			</nav>
+			<!-- /nav -->
+			<div class="clear"></div>

@@ -1,0 +1,236 @@
+{
+    "key": "group_5e4d8cd277966",
+    "title": "Navigation Item 3",
+    "fields": [
+        {
+            "key": "field_5e4d8cd27f49f",
+            "label": "Navigation Item 3",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "4 column, all links, layout.",
+            "new_lines": "br",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6618164c29da6",
+            "label": "Featured Image",
+            "name": "nav3_ft_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_5e4d8cd27f4e0",
+            "label": "Top Level Label",
+            "name": "nav3_label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e4d8cd27f559",
+            "label": "Navigation Columns",
+            "name": "nav3_columns",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
+            "layout": "block",
+            "button_label": "Add Column",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_5e4d8cd28c30b",
+                    "label": "Column Title",
+                    "name": "column_title",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "parent_repeater": "field_5e4d8cd27f559"
+                },
+                {
+                    "key": "field_5e4d8cd28c356",
+                    "label": "Links",
+                    "name": "links",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Link",
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_5e4d8cd27f559",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e4d8d3214223",
+                            "label": "Link or Title",
+                            "name": "link_or_title",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "link": "Link",
+                                "title": "Title"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "link",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0,
+                            "parent_repeater": "field_5e4d8cd28c356"
+                        },
+                        {
+                            "key": "field_5e4d8cd2924ce",
+                            "label": "Link",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e4d8d3214223",
+                                        "operator": "==",
+                                        "value": "link"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "parent_repeater": "field_5e4d8cd28c356"
+                        },
+                        {
+                            "key": "field_5e4d8daf14224",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5e4d8d3214223",
+                                        "operator": "==",
+                                        "value": "title"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_5e4d8cd28c356"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-navigation"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1714596549
+}

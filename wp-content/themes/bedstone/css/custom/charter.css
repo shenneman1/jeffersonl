@@ -1,0 +1,422 @@
+/* =================================================================================
+  Charter
+================================================================================= */
+
+/* ==================================================
+  Charter Layout
+================================================== */
+.charter-form {
+    float: right;
+    margin-top: 4rem;
+    width: 270px;
+}
+
+.page-template-tpl-charter .site-headline,
+.page-template-tpl-charter .site-main > article,
+.charter-features,
+.charter-gallery {
+    width: calc(100% - 300px);
+    float: left;
+}
+
+.page-template-tpl-charter .site-main .content.clearfix::before,
+.page-template-tpl-charter .site-main .content.clearfix::after {
+    clear: none;
+}
+
+
+
+/* ==================================================
+  Charter Form
+================================================== */
+.charter-form {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.charter-form__heading {
+    margin: 0;
+    padding: 1rem .5rem;
+    background-color: #094886;
+    font: 700 1.375rem/1.2 "Roboto", sans-serif;
+    color: #fff !important;
+    text-align: center;
+    text-transform: capitalize !important;
+}
+
+.charter-form__gravity-form {
+    background-color: #f1efeb;
+    padding: 1rem 10%;
+}
+
+.charter-form__gravity-form .gform_wrapper {
+    margin: 0;
+    max-width: 100%;
+}
+
+.charter-form__gravity-form .gform_wrapper .gsection {
+    margin-top: 0 !important;
+    border-bottom: 0 none;
+}
+
+.charter-form__gravity-form .gform_wrapper .gsection .gsection_title {
+    font: 700 1rem/1.2 "Roboto", sans-serif;
+    color: #0079c2;
+    text-transform: uppercase;
+    text-align: center;
+    border: 0 none;
+}
+
+.charter-form__gravity-form .gform_wrapper .gsection h2.gsection_title {
+    padding: 1rem 0.5rem 0 !important;
+}
+
+.charter-form__gravity-form .gform_wrapper .top_label input.medium,
+.charter-form__gravity-form .gform_wrapper .datepicker,
+.charter-form__gravity-form .gform_wrapper textarea.medium {
+    margin-top: 0;
+    border-color: #c7c8ca;
+    width: 100% !important;
+    max-width: none;
+    font-size: .875rem;
+}
+
+.charter-form__gravity-form .gform_wrapper .top_label input.medium.datepicker {
+    /* if client request icon is returned to form -- also remove the "display: none;" below */
+    /* width: calc(100% - 30px) !important; */
+}
+
+.charter-form__gravity-form .ui-datepicker-trigger {
+    display: none !important;
+}
+
+.charter-form__gravity-form .gform_wrapper .gform_footer {
+    text-align: center;
+}
+
+
+
+/* ==================================================
+  Charter Features
+================================================== */
+.charter-features {
+}
+
+.charter-features__heading {
+    margin: 1rem 0 1.75rem;
+    color: #0079c2;
+    font: 700 1rem/1.2 "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.charter-features__list {
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.charter-features__item {
+    width: 110px;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    font: 700 1rem/1.2 "Roboto", sans-serif;
+}
+
+.charter-features__item img {
+    display: block;
+    margin: 0 auto 0.5rem;
+    max-width: 45px;
+}
+
+.charter-features__note {
+    font-size: .875rem;
+}
+
+
+
+/* ==================================================
+  Charter Gallery
+================================================== */
+.charter-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0;
+    height: 280px;
+}
+
+.charter-gallery__img {
+    width: 48.6%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* ==================================================
+  Charter Testimonials
+================================================== */
+.charter-testimonials, .extra-testimonials {
+    padding: 3.75rem 0 3.125rem;
+    background-color: #f1efeb;
+    text-align: center;
+}
+
+.charter-testimonials__heading {
+    position: relative;
+    margin: 0 0 1.5rem;
+    padding: 0 0 10px;
+    font: 700 1rem/1.2 "Roboto", sans-serif;
+    color: #0079c2;
+    text-transform: uppercase;
+}
+
+.charter-testimonials__heading:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 15px);
+    display: block;
+    background-color: #094886;
+    width: 30px;
+    height: 4px;
+}
+
+.charter-testimonials__interactive {
+    padding: 0 10%;
+}
+
+.charter-testimonials .unslider {
+    position: relative;
+    overflow: visible;
+	padding: 4px;
+}
+
+.charter-testimonials__unslider.unslider-horizontal {
+	padding: 5px;
+}
+
+.unslider button.unslider-arrow{
+    border: none;
+    background-color: #f1efeb;
+}
+
+.unslider-arrow {
+    left: 0;
+}
+.unslider-arrow.next {
+    right: 0;
+}
+
+.charter-testimonials__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(-1 * (6% + 21px));
+    font-size: 3.625rem;
+    line-height: 1;
+    color: #c00e30;
+}
+
+.charter-testimonials__arrow.next {
+    right: calc(-1 * (8% + 21px)) !important;
+}
+
+.charter-testimonials__arrow.prev {
+    left: calc(-1 * (8% + 21px)) !important;
+}
+
+.charter-testimonials__item {
+    font-size: 1.375rem;
+    line-height: 1.455;
+    visibility: hidden;
+}
+
+.charter-testimonials__item--h2 {
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.455;
+}
+
+.charter-testimonials__item.unslider-active{
+    visibility: visible;
+}
+
+.charter-testimonials__citation {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.charter-testimonials__item--cta {
+    text-align: center;
+}
+
+.charter-testimonials__item--button {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* ==================================================
+  Charter Catalog
+================================================== */
+.charter-catalog {
+    margin: 4rem 0 2rem;
+}
+
+.charter-catalog__heading,
+.charter-catalog__subhead {
+    text-align: center;
+}
+
+.charter-catalog__heading {
+    margin: 0;
+    color: #0079c2;
+    font-size: 2.5em;
+    font-family: "Raleway";
+}
+
+.charter-catalog__subhead {
+    margin: 0.7rem 0 0;
+    color: #094886;
+}
+
+.charter-catalog__items {
+    margin-top: 1.5rem;
+}
+
+.charter-catalog__item {
+    border-bottom: 1px solid #ddd;
+    padding: 3rem 0;
+}
+
+.charter-catalog__img {
+    float: left;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.charter-catalog__content,
+.charter-catalog__content > *:last-child {
+    margin-bottom: 0;
+}
+
+.charter-catalog__item--has-img .charter-catalog__content {
+    float: right;
+    width: calc(100% - 250px - 2rem);
+}
+
+
+
+/* ==================================================
+  Charter Service Areas
+================================================== */
+.charter-service-areas {
+    margin: 3.75rem 0 4rem;
+}
+
+.charter-service-areas__heading {
+    font: 700 1.375rem/1.2 "Roboto", sans-serif;
+    color: #18537b;
+    text-align: center;
+}
+
+.charter-service-areas__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.charter-service-areas__item {
+    width: calc(50% - 30px);
+}
+
+.charter-service-areas__link {
+    display: block;
+    padding-bottom: .8rem;
+    background-color: #c00e30;
+    text-align: center;
+    font: 700 1rem/1.2 "Raleway", sans-serif;
+    color: #fff;
+}
+
+.charter-service-areas__link i {
+    margin-left: .5em;
+}
+
+.charter-service-areas__image {
+    display: block;
+    width: 100%;
+    margin-bottom: .8rem;
+}
+
+
+
+/* ==================================================
+  Charter Contact
+================================================== */
+.charter-contact {
+    margin: 3.75rem 0;
+    text-align: center;
+}
+
+.charter-contact__cta {
+    margin-bottom: 1.5rem;
+}
+
+.charter-contact__info a {
+    color: #c00e30;
+}
+
+
+
+/* ==================================================
+  Charter FAQ
+================================================== */
+.page-id-3089 h2 {
+    color: #c00e30;
+    font-size: 1.5;
+    text-transform: uppercase;
+}
+
+.page-id-3089 h3 {
+    margin-top: 1.6em;
+    margin-bottom: 0.3em;
+}
+
+.page-id-3089 h3 + p {
+    margin-top: 0;
+}
+
+.faq-nav-list {
+    list-style: none;
+    padding: 0;
+    color: #a7a9ac;
+    text-transform: uppercase;
+}
+
+.faq-nav-list li {
+    display: inline-block;
+}
+
+.faq-nav-list a {
+    color: inherit;
+}
+
+.faq-nav-list a:hover {
+    color: #666;
+}
+
