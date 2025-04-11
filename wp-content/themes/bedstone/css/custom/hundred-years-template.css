@@ -1,0 +1,481 @@
+/* =================================================================================
+  100 Years Template
+================================================================================= */
+
+.hundred-years-page section {
+    padding: 50px 0;
+}
+
+.hundred-years-page section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hundred-years-page section .row .col-md-4, .hundred-years-page section .row .col-md-6 {
+    margin-bottom: 15px;
+}
+
+.hundred-years-page h1, .hundred-years-page h2 {
+    color: #18537B;
+    font-size: 2.8em;
+    margin: 0;
+}
+
+.hundred-years-page .full-width-content-100 h1:before,
+.hundred-years-page .full-width-content-100 h1:after {
+    content: '';
+    background: #C00E30;
+    display: inline-block;
+    height: 3px;
+    width: 45px;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.hundred-years-page .full-width-content-100 h1:before {
+    margin-right: 20px;
+}
+
+.hundred-years-page .full-width-content-100 h1:after {
+    margin-left: 20px;
+}
+
+.hundred-years-page p {
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hundred-years-page .icon-link {
+    color: #C00E30;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.37px;
+    line-height: 26px;
+}
+
+.hundred-years-page .button {
+    background-color: #C00E30;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.96px;
+    line-height: 33px;
+    padding: 10px 20px;
+}
+
+.fancybox-content {
+    position: relative !important;
+    padding-bottom: 45% !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    max-width: 100% !important;
+    /*width: 640px !important;*/
+}
+
+.fancybox-content iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.hundred-years-page .button i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.hundred-years-page .icon-link i {
+    margin-left: 5px;
+}
+
+.hundred-years-page .hundred-year-banner {
+    padding: 0;
+}
+
+.hundred-years-page .hundred-year-banner .banner-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.hundred-years-page .hundred-year-banner .bg-video {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 0;
+}
+
+.hundred-years-page .hundred-year-banner img {
+    display: block;
+    width: 100%;
+}
+
+.hundred-years-page .media-after img, .hundred-years-page .media-before img {
+    display: block;
+}
+
+.hundred-years-page .media-after, .hundred-years-page .media-before {
+    position: relative;
+}
+
+/*.hundred-years-page .with-video a{*/
+/*position: relative;*/
+/*}*/
+.hundred-years-page .with-video a:before {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: #fff;
+    content: '\f04b';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: FontAwesome;
+    font-size: 45px;
+    height: 80px;
+    padding-left: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 78px;
+    z-index: 99;
+}
+
+.hundred-years-page .with-video:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 98;
+}
+
+.hundred-years-page .timeline-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.hundred-years-page .timeline-content p {
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    line-height: 27px;
+}
+
+.hundred-years-page .content-after {
+    background-color: #052A57;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.hundred-years-page .content-after h2, .hundred-years-page .content-after p {
+    color: #fff;
+    margin-top: 0;
+}
+
+.hundred-years-page .section-divider-100 {
+    color: #333132;
+}
+
+.hundred-years-page .full-width-content-100 p {
+    font-size: 18px;
+    letter-spacing: 0.96px;
+    line-height: 33px;
+    margin-top: 0;
+}
+
+.full-width-content-100 + .hundred-years-timeline {
+    padding-top: 0;
+}
+
+.hundred-years-page #booking {
+    margin-top: 0;
+}
+
+.hundred-years-page .three-image-blocks.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hundred-years-page .three-image-blocks.bg-image:after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.hundred-years-page .three-image-blocks.bg-image .row {
+    position: relative;
+    z-index: 3;
+}
+
+.hundred-years-page .three-image-blocks.bg-dark-blue {
+    background-color: #052A57;
+}
+
+.hundred-years-page .three-image-blocks.bg-dark-blue h3, .hundred-years-page .three-image-blocks.bg-image h3 {
+    color: #0079C2;
+}
+
+.hundred-years-page .three-image-blocks.bg-dark-blue p, .hundred-years-page .three-image-blocks.bg-image p {
+    color: #fff;
+}
+
+.hundred-years-page .three-image-blocks {
+    text-align: center;
+}
+
+.hundred-years-page .three-image-blocks h2 {
+    color: #0079C2;
+}
+
+.hundred-years-page .three-image-blocks .intro-content {
+    display: block;
+    margin: 0 auto 40px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.hundred-years-page .three-image-blocks .col-md-4 img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px;
+    width: 100%;
+}
+
+.hundred-years-page .three-image-blocks h3 {
+    color: #035B9F;
+}
+
+.hundred-years-page .three-image-blocks .col-md-4 p {
+    margin: 0 auto;
+    max-width: 330px;
+    width: 100%;
+}
+
+.hundred-years-page .three-column-count h2.section-title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hundred-years-page .three-column-count h2.section-title:after {
+    content: '';
+    background: #C00E30;
+    display: block;
+    height: 2px;
+    width: 60px;
+    margin: 15px auto 30px;
+}
+
+.hundred-years-page .three-column-count {
+    background-color: #F0EEEA;
+    text-align: center;
+}
+
+.hundred-years-page .three-column-count .col-lg-4 {
+    position: relative;
+}
+
+.hundred-years-page .three-column-count .col-lg-4:after {
+    content: '';
+    background-color: #000;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+}
+
+.hundred-years-page .three-column-count .col-lg-4:last-of-type:after {
+    background-color: transparent;
+}
+
+.hundred-years-page .three-column-count h2 {
+    color: #0182C8;
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+.hundred-years-page .three-column-count h3 {
+    color: #035B9F;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    line-height: 29px;
+    margin-top: 0;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row {
+    background-color: #fff;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row .accordion__title {
+    transition: all 0.3s ease;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row .accordion__title:hover {
+    background-color: #052A57;
+    color: #fff;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row:nth-of-type(2n) {
+    background-color: #F0EEEA;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row:last-of-type {
+    border-bottom-color: transparent;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row.active .accordion__title:after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row .accordion__title {
+    color: #0182C8;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+    position: relative;
+    padding: 10px 25px;
+    padding-right: 45px;
+    text-transform: uppercase;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__title .accordion_sub_title {
+    color: #18537B;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__title:hover .accordion_sub_title {
+    color: #fff;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion_sub_title:before {
+    content: '-';
+    margin: 0 15px;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row .accordion__title:hover {
+    cursor: pointer;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row .accordion__title:after {
+    content: '\f055';
+    color: #C00E30;
+    font-family: FontAwesome;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row .accordion__content {
+    display: none;
+    padding: 20px 25px;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row .accordion__content h3, .hundred-years-page .hundred-years-accordion .accordion__row .accordion__content h3 strong {
+    color: #18537B;
+}
+
+.hundred-years-page .hundred-years-accordion .accordion__row .accordion__content p:first-of-type {
+    margin-top: 0;
+}
+
+.hundred-years-page .extra-testimonials {
+    margin-bottom: 0;
+}
+
+.hundred-years-page #booking h2 {
+    color: #fff;
+}
+
+.site-header .container {
+    position: relative;
+}
+
+@media only screen and (max-width: 1199px) {
+    .site-header .container {
+        /* if not static, mobile menu aligns inside the container. This could be address with negative right position */
+        position: static;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hundred-years-page .col-md-6:first-of-type {
+        padding-right: 35px;
+    }
+
+    .hundred-years-page .col-md-6:last-of-type {
+        padding-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hundred-year-banner .bg-video{
+        display: none !important;
+    }
+
+    .hundred-years-page section .row .col-lg-4 {
+        width: 100%;
+    }
+
+    .hundred-years-page .three-column-count .col-lg-4 {
+        margin: 20px 0;
+    }
+
+    .hundred-years-page .three-column-count .col-lg-4:after {
+        left: 50%;
+        right: inherit;
+        top: inherit;
+        bottom: -15px;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hundred-years-page section {
+        padding: 30px 0;
+    }
+
+    .hundred-years-page h2 {
+        font-size: 2em;
+    }
+
+    .hundred-years-page section .row .col-md-4, .hundred-years-page section .row .col-md-6 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hundred-years-page section {
+        padding: 15px 0 15px;
+    }
+
+    .hundred-years-page h2 {
+        font-size: 1.5em;
+    }
+}

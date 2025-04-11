@@ -1,0 +1,133 @@
+/* ==================================================
+  Gravity Forms
+================================================== */
+body .gform_wrapper .gform_body label.gfield_label + div.ginput_container {
+    margin-top: 0;
+}
+
+.gform_wrapper .gform_body form li,
+.gform_wrapper .gform_body li {
+    margin-bottom: 0.7rem;
+}
+
+.content .gform_wrapper img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* ========== Inputs ========== */
+.gform_wrapper .gform_body input[type=email],
+.gform_wrapper .gform_body input[type=number],
+.gform_wrapper .gform_body input[type=password],
+.gform_wrapper .gform_body input[type=tel],
+.gform_wrapper .gform_body input[type=text],
+.gform_wrapper .gform_body input[type=url],
+.gform_wrapper .gform_body textarea {
+    padding: 0.32em 0.5em;
+}
+
+.gform_wrapper .gform_body ul.gfield_checkbox li,
+.gform_wrapper .gform_body ul.gfield_radio li {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 1em;
+}
+
+.gform_wrapper .gform_body .gfield_html.gfield_no_follows_desc {
+    margin-top: 2em;
+}
+
+
+/* ========== Label ========== */
+.gform_wrapper .gform_body .top_label .gfield_label {
+    margin: 0.65em 0 0.2em;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.gform_wrapper .gform_body .gfield_required {
+    color: inherit;
+}
+
+
+/* ========== Description ========== */
+.gform_wrapper .gform_body .top_label .gfield_description {
+    padding-top: 0.2em;
+}
+
+.gform_wrapper .gform_body li.field_description_above .gfield_description {
+    margin-bottom: 0.2em;
+}
+
+.gform_wrapper .gform_body .description,
+.gform_wrapper .gform_body .gfield_description,
+.gform_wrapper .gform_body .gsection_description,
+.gform_wrapper .gform_body .instruction {
+    font-size: 0.8rem;
+}
+
+
+/* ========== Messages / Errors ========== */
+.gform_wrapper form div.validation_error {
+    color: #790000;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 1.6em;
+    border-top: 2px solid #790000;
+    border-bottom: 2px solid #790000;
+    padding: 0.8em 0;
+}
+
+/* input */
+.gform_wrapper .gform_body li.gfield.gfield_error.gfield_contains_required div.ginput_container {
+    margin-top: 0;
+}
+
+/* message */
+.gform_wrapper .gform_body .gfield_description + .gform_wrapper .gfield_description.validation_message,
+.gform_wrapper .gform_body .ginput_container + .gfield_description.validation_message {
+    margin-top: 0;
+}
+
+/* message */
+.gform_wrapper .gform_body  .gfield_description.validation_message,
+.gform_wrapper .gform_body  .top_label .gfield_description.validation_message {
+    padding: 0.25em 0 0.65em !important;
+}
+
+/* bg color */
+.gform_wrapper .gform_body li.gfield.gfield_error,
+.gform_wrapper .gform_body li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    background-color: #FFDFE0;
+    border-top: 1px solid #C89797;
+    border-bottom: 1px solid #C89797;
+}
+
+/* .ctct-gdpr-text {
+    display: none;
+} */
+
+
+.ctct-form-label {
+    display: none!important;
+}
+
+.ctct-form-field {
+    text-align: center!important;
+}
+
+@media screen and (min-width:768px) {
+    .ctct-form-embed form.ctct-form-custom button.ctct-form-button {
+        margin: 0 auto;
+        width: 15%!important;
+    }
+}
+
+.ctct-gdpr-text {
+    display: none!important;
+}
+
+.ctct-form-footer {
+    display: none;
+}

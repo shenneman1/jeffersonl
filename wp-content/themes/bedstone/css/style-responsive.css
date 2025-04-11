@@ -1,0 +1,808 @@
+/**
+ *     project responsive
+ */
+
+/* =================================================================================
+   1199 - lower = lg
+================================================================================= */
+
+@media only screen and (max-width: 1199px) {
+    /* ==================================================
+      Global
+    ================================================== */
+    html {font-size: 16px;}
+
+
+    /* ==================================================
+      Elements
+    ================================================== */
+    .bus-stops-table th {
+        padding: 0.45rem 0.9rem;
+    }
+
+    .bus-stops-table td {
+        padding: 1.4rem 0.9rem;
+        font-size: 0.9em;
+    }
+
+
+    /* ==================================================
+      Header
+    ================================================== */
+    .header-search__large {
+        display: none;
+    }
+
+
+    /* ==================================================
+      Navigation
+    ================================================== */
+    .toggle-mmenu {
+        display: inline-block;
+    }
+
+    .site-header__nav-wrap {
+        height: 1em;
+    }
+
+    .nav-main {
+        display: none;
+    }
+
+
+    /* ==================================================
+      Footer
+    ================================================== */
+    .sticky-site-footer { /*padding-bottom: 123px;*/ } /* match .site-footer height */
+    .sticky-site-footer .site-footer { /*height: 123px*/ } /* match .sticky-site-footer margin-bottom */
+
+    .site-footer {
+        background-image: none;
+    }
+
+
+    /* ==================================================
+      Home
+    ================================================== */
+    .feature-card__content {
+        padding: 1rem 1rem 4rem;
+    }
+
+    .feature-card__btn {
+        left: 1rem;
+        bottom: 1rem;
+    }
+
+    .home-cta__content {
+        padding: 1.5em;
+    }
+
+    .banner-booking__btns {
+        max-width: 798px;
+    }
+
+    .banner-booking__btn {
+        font-size: 0.9em;
+    }
+
+    /* ==================================================
+      Charter
+    ================================================== */
+    .charter-catalog__heading {
+        font-size: 2.2em;
+    }
+}
+
+
+
+
+
+/* =================================================================================
+   991 - lower = md
+================================================================================= */
+
+@media only screen and (max-width: 991px) {
+    /* ==================================================
+      Global
+    ================================================== */
+    html {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    h1 {
+        font-size: 3.125em;
+    }
+
+
+    /* ==================================================
+      Elements
+    ================================================== */
+
+
+
+    /* ==================================================
+      Styleguide / WYSIWYG Content
+    ================================================== */
+
+
+
+    /* ==================================================
+      Header
+    ================================================== */
+    /*.site-header .container {*/
+        /* if not static, mobile menu aligns inside the container. This could be address with negative right position */
+    /*    position: static;*/
+    /*}*/
+
+    .header-utility {
+        top: 0;
+    }
+
+    .toggle-nav-main {
+        display: inline-block;
+    }
+
+    .header-search {
+        position: relative;
+        top: 0px;
+        right: auto;
+        left: 0;
+        float: left;
+    }
+
+    /* ========== Header Social ========== */
+    .social--header {
+        position: static;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .social--header a {
+        color: #fff;
+    }
+
+    /* ========== Header Search ========== */
+    .header-search {
+        /*width: 100%;*/
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
+    /* ==================================================
+      Footer
+    ================================================== */
+    .sticky-site-footer {/*padding-bottom: 123px;*/}  /* match .site-footer height */
+    .sticky-site-footer .site-footer {/*height: 123px;*/} /* match .sticky-site-footer margin-bottom */
+
+    .footer-main__col {
+        margin-bottom: 1.5em;
+    }
+
+    .subfooter {
+        padding-top: 0;
+    }
+
+
+    /* ==================================================
+      Modules
+    ================================================== */
+    /* =========== Sidebar ============ */
+    .sidebar {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .site-main {
+        /* use padding on site-main instead of sidebar */
+        padding-right: 0;
+    }
+
+    .sidebar-booking {
+        display: none;
+    }
+
+    .btn.booking-link--mobile {
+        display: block;
+    }
+
+
+    /* =========== Booking Module ============ */
+    .home .banner-booking--large {
+        display: block;
+    }
+
+    .banner-booking--large {
+        display: none;
+    }
+
+    /* =========== Article Listing ============ */
+    .list-article__thumb {
+        margin-bottom: 0.5em;
+    }
+
+    .list-article__content,
+    .list-article--has-thumb .list-article__content {
+        padding-left: 0;
+    }
+
+    /* =========== Signup Banner ============ */
+    .banner-signup__form-wrap input {
+        height: 42px;
+    }
+
+    /* ==================================================
+      Home
+    ================================================== */
+    .home .banner-booking {
+        /* height: 496px; */
+    }
+
+    .feature-card {
+        position: relative;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .feature-card__img,
+    .feature-card__content {
+        width: 100%;
+    }
+
+    .feature-card__img {
+        height: 200px;
+    }
+
+    .feature-card__content {
+        position: static;
+    }
+
+    .banner-booking__btn {
+        font-size: 0.9em;
+    }
+
+
+    /* ==================================================
+      Charter
+    ================================================== */
+    .charter-catalog__items {
+        margin-top: 1rem;
+    }
+
+    .charter-catalog__img {
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .charter-catalog__item--has-img .charter-catalog__content {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 869px) {
+    iframe {
+        height: 750px!important;
+    }
+}
+
+
+
+
+
+/* =================================================================================
+   767 - lower = sm
+================================================================================= */
+
+@media only screen and (max-width: 767px) {
+    /* ==================================================
+      Global
+    ================================================== */
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    h1 {
+        font-size: 2.000em;
+    }
+
+    .banner-booking__btns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .banner-booking--mobile .banner-booking__btns {
+        flex-direction: row;
+    }
+
+    .banner-booking--mobile .banner-booking__btn {
+        text-align: center;
+    }
+
+    .banner-booking__btn {
+        border-right: none;
+        flex-basis: 48%;
+        margin-bottom: 1rem;
+    }
+
+    /* ==================================================
+      Elements
+    ================================================== */
+    /* =========== Document Header ============ */
+    .site-headline h1 {
+        font-size: 2em;
+    }
+
+
+    /* =========== Pagination ============ */
+    .nav-pagination {
+        margin-top: 2rem;
+    }
+
+    .nav-pagination .prev,
+    .nav-pagination .next {
+        padding: 0.5em 1em;
+        font-size: 0.85em;
+    }
+
+
+    /* =========== Bus Stop Table ============ */
+    .bus-stops-table {
+        margin-top: 2rem;
+        border-top: 5px solid #f1efeb;
+    }
+
+    .bus-stops-table tr.table__large-head {
+        display: none;
+    }
+
+    .bus-stops-table tr.table__mobile-head {
+        display: block;
+    }
+
+    .bus-stops-table tbody tr {
+        display: block;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+
+    .bus-stops-table th,
+    .bus-stops-table td {
+        display: block;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .bus-stops-table td {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .table__mobile-heading {
+        display: block;
+    }
+
+
+    /* =========== Gravity Forms ============ */
+    .gform_wrapper form .top_label .gfield_description {
+        display: block;
+        width: 100%;
+    }
+
+    .gform_wrapper form li.field_description_above .gfield_description {
+        margin-bottom: 0;
+    }
+
+
+
+    /* ==================================================
+      Styleguide / WYSIWYG Content
+    ================================================== */
+    .content .lead,
+    .content h2 {
+        font-size: 1.25em;
+    }
+
+    .content .callout {
+        padding-left: 1em;
+        font-size: 1.3em;
+    }
+
+
+    /* ==================================================
+      Header
+    ================================================== */
+    .site-header__main {
+        padding: 1em 0 0.2em;
+    }
+
+    .header-logo img {
+        width: 220px;
+        height: 30px;
+    }
+
+    .header-utility {}
+
+
+    /* ==================================================
+      Navigation
+    ================================================== */
+    .toggle-mmenu {
+        top: 1em;
+    }
+
+
+    /* ==================================================
+      Footer
+    ================================================== */
+    .sticky-site-footer { /*padding-bottom: 123px;*/ } /* match .site-footer height */
+    .sticky-site-footer .site-footer { /*height: 123px;*/ } /* match .sticky-site-footer margin-bottom */
+
+
+    /* ==================================================
+      Modules
+    ================================================== */
+    /* =========== Article Listing ============ */
+    .list-article__thumb {
+        width: 115px;
+        height: 115px;
+        margin-bottom: 0.2em;
+        margin-right: 1em;
+    }
+
+    /* =========== Social ============ */
+    .social__item {
+        font-size: 1.2em;
+    }
+
+    .social__item a .fa {
+        top: 0.4em;
+    }
+
+    /* =========== Sign-up Banner ============ */
+    .banner-signup {
+        padding: 1.5em 0 2em;
+    }
+
+    .banner-signup__heading {
+        font-size: 1.15em;
+    }
+
+    .banner-signup__form-wrap input {
+        height: 35px;
+        padding-top: 0.4em;
+        padding-bottom: 0.3em;
+    }
+
+    /* =========== Icegram - modal newsletter signup ============ */
+    .icegram.ig_popup.ig_inspire .ig_headline {
+        font-size: 1.5rem;
+    }
+
+    .icegram.ig_popup form {
+        font-size: 1rem;
+    }
+
+    .icegram.ig_popup.ig_inspire input {
+        height: 35px;
+    }
+
+    /* =========== Booking Module ============ */
+    .home .banner-booking--large {
+        display: none;
+    }
+
+    .banner-booking--mobile {
+        display: block;
+    }
+
+    .home .banner-booking {
+        height: auto;
+    }
+
+
+    /* ==================================================
+      Home
+    ================================================== */
+
+    .single-bucket {
+        border: none;
+        padding: 20px 0px;
+    }
+
+    .banner-booking__phone {
+        display: block;
+    }
+
+    .home-bottom--has-img .home-bottom__cols {
+        display: block;
+    }
+
+    .home-bottom__img {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .home-bottom__img::after {
+        display: none;
+    }
+
+    .home-bottom__img img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .home-bottom__content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .home-bottom__heading {
+        font-size: 1.3em;
+    }
+
+    .banner-booking__btns {
+        margin-bottom: 20px;
+        height: auto;
+    }
+    
+    .banner-booking__btn {
+        height: auto;
+    }
+    /* ==================================================
+      Wifi Modal
+    ================================================== */
+    .wd-modal {
+        padding: 1.5rem 2rem;
+    }
+
+    /* ==================================================
+      Charter Layout
+    ================================================== */
+    .page-template-tpl-charter .site-main {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .page-template-tpl-charter .site-headline,
+    .page-template-tpl-charter .site-main > article {
+        order: -2;
+    }
+    .charter-form {
+        order: -1;
+        float: none;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        min-width: 300px;
+    }
+	
+	
+    .page-template-tpl-charter .site-headline,
+    .page-template-tpl-charter .site-main > article,
+    .charter-features,
+    .charter-gallery {
+        width: auto;
+    }
+
+    /* ==================================================
+      Charter Gallery
+    ================================================== */
+    .charter-gallery {
+        flex-flow: column nowrap;
+        align-items: center;
+        height: auto;
+    }
+    .charter-gallery__photo {
+        width: 80%;
+        height: 200px;
+    }
+    .charter-gallery__photo + .charter-gallery__photo {
+        margin-top: 1.5rem;
+    }
+
+    /* ==================================================
+      Charter Testimonials
+    ================================================== */
+    .charter-testimonials__item {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    /* ==================================================
+      Charter Catalog
+    ================================================== */
+    .charter-catalog {
+        margin-top: 3rem;
+    }
+
+    .charter-catalog__heading {
+        font-size: 1.5rem;
+    }
+
+    .charter-catalog__items {
+        margin-top: 0;
+    }
+
+    .charter-catalog__item {
+        padding: 2.5rem 0;
+    }
+
+    .charter-catalog__img {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+
+
+    /* ==================================================
+      Charter Service Areas
+    ================================================== */
+    .charter-service-areas__list {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .charter-service-areas__item {
+        width: 60%;
+        min-width: 300px;
+    }
+    .charter-service-areas__item + .charter-service-areas__item {
+        margin-top: 2rem;
+    }
+
+}
+
+
+
+
+
+/* =================================================================================
+   480
+================================================================================= */
+
+@media only screen and (max-width: 480px) {
+    /* ==================================================
+      Global
+    ================================================== */
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    h2 {
+        font-size: 1.125em;
+    }
+
+    .banner-booking--mobile .banner-booking__btn {
+        font-size: 0.7rem;
+    }
+
+    /* ==================================================
+      Elements
+    ================================================== */
+    /* =========== Document Header ============ */
+    .site-headline h1 {
+        font-size: 1.5em;
+    }
+
+
+
+    /* ==================================================
+      Styleguide / WYSIWYG Content
+    ================================================== */
+    .content .lead,
+    .content h2 {
+        font-size: 1.2em;
+    }
+
+    .content .callout {
+        font-size: 1.2em;
+    }
+
+
+    /* ==================================================
+      Footer
+    ================================================== */
+    .sticky-site-footer { /*padding-bottom: 123px;*/} /* match .site-footer height */
+    .sticky-site-footer .site-footer { /*height: 123px;*/ } /* match .sticky-site-footer margin-bottom */
+
+    .footer-main__col {
+        text-align: center;
+    }
+
+    .subfooter__list {
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .subfooter__list li:nth-child(3)::before {
+        display: none;
+    }
+
+
+
+    /* ==================================================
+      Modules
+    ================================================== */
+    /* =========== Article Listing ============ */
+    .list-article__thumb {
+        float: none;
+        width: 100%;
+        max-width: 300px;
+        height: 175px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    /* =========== Sign-up Banner ============ */
+    .banner-signup__heading {
+        font-size: 1.1em;
+    }
+
+     /* =========== Icegram - modal newsletter signup ============ */
+    .icegram.ig_popup.ig_inspire .ig_headline {
+        padding-top: 1.75em;
+        padding-bottom: 0.2em;
+        font-size: 1.1rem;
+    }
+
+    .icegram.ig_popup .ig_content {
+        padding-bottom: 0.7rem;
+    }
+
+    .icegram.ig_popup.ig_inspire .ig_message {
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        text-align: left;
+    }
+
+    body .icegram.ig_popup.ig_inspire .popup__form-wrap .fieldtype-input,
+    body .icegram.ig_popup.ig_inspire .popup__form-wrap .submit-container,
+    body .icegram.ig_popup.ig_inspire .popup__form-wrap input[type="submit"],
+    .popup__form-wrap--wifi .fieldtype-input,
+    .popup__form-wrap--wifi .submit-container,
+    .popup__form-wrap--wifi input[type=submit] {
+        display: block;
+        width: 100% !important;
+    }
+
+    .icegram.ig_popup.ig_inspire .popup__form-wrap input[type="text"],
+    .popup__form-wrap--wifi input[type=text] {
+        text-align: center;
+    }
+
+    body .icegram.ig_popup.ig_inspire .popup__form-wrap input[type="submit"],
+    .popup__form-wrap--wifi input[type=submit] {
+        left: 0;
+    }
+
+
+    /* ==================================================
+      Charter Testimonials
+    ================================================== */
+    .charter-testimonials__item {
+        text-align: left;
+    }
+    .charter-testimonials__citation {
+        text-align: center;
+    }
+
+
+    /* ==================================================
+      Wifi Modal
+    ================================================== */
+    .wd-modal {
+        padding: 1.5rem 1.5rem;
+    }
+
+
+    /* ==================================================
+      Charter Catalog
+    ================================================== */
+    .charter-catalog__heading {
+        font-size: 1.3rem;
+    }
+
+    .charter-catalog__subhead {
+        font-size: 1rem;
+    }
+
+}
